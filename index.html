@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" a href="dist/css/style.css">
+</head>
+<body>
+    <header>
+   
+        <div id="navbar">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#aboutbook">About</a>
+                <a href="#bg">Book</a>
+            </nav>
+        </div>
+        <div id="home"> 
+            <div id="container"> 
+
+                <div id="mainbanner">
+                    <div id="banner">
+                        <p>Book For All</p>
+                        <h1>Develop Your <br>Imagination</h1>
+                        <div class="button">
+                        <a href="#bg">Lets Choose</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>  
+    </div> 
+    </header>
+    <about>
+        <div class="desc">
+        <h1>Welcome To BookSheelf</h1>
+        <p>
+            You can find books to read freely here.<br>
+            Available from various genres and types <br>
+            of books. in ellbook you will get interesting<br>
+            books to read. what are you waiting for <br>
+            let's read on BookShelf <br>
+        </p>
+    </div>
+        <div id="aboutbook"> 
+            <div class="image"> 
+                <div class="kacchan"><img src="img/kachanbook.png"></div>
+                
+            </div>
+            
+           
+        </div>
+      </about>
+
+    <main>
+      <div id="bg">
+      <section class="input_book">
+         <h2>Enter New Book</h2>
+         <form id="inputBook">
+            <div class="input">
+               <label for="inputBookTitle">Title</label>
+               <input id="inputBookTitle" type="text" required />
+            </div>
+            <div class="input">
+               <label for="inputBookAuthor">Writer</label>
+               <input id="inputBookAuthor" type="text" required />
+            </div>
+            <div class="input">
+               <label for="inputBookYear">Publication Year</label>
+               <input id="inputBookYear" type="number" min="1990" value="2022" required />
+            </div>
+            <div class="input_inline">
+               <label for="inputBookIsComplete">finished reading</label>
+               <input id="inputBookIsComplete" type="checkbox" />
+            </div>
+            <button id="bookSubmit" type="submit" class="btn-blue">Enter New Book</button>
+         </form>
+      </section>
+
+      <section class="search_book">
+         <h2>Find Books on the Shelf</h2>
+         <form id="searchBook">
+            <label for="searchBookTitle">Title</label>
+            <input id="searchBookTitle" type="text" placeholder="enter book title" />
+            <button id="searchSubmit" type="submit" class="btn-blue"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+         </form>
+      </section>
+
+      <section class="book_shelf_container">
+         <button id="reset" class="btn-red" onclick="resetRak()"><i class="fa-solid fa-trash"></i> Empty the Shelf</button>
+         <div class="book_shelf book_read">
+            <h2>Not finished reading</h2>
+            <div id="incompleteBookshelfList" class="book_list">
+            </div>
+         </div>
+
+         <div class="book_shelf">
+            <h2>Done reading</h2>
+            <div id="completeBookshelfList" class="book_list">
+            </div>
+         </div>
+      </section>
+      <section class="input_section input_edit_section">
+         <form id="editData">
+            <div class="input">
+               <label for="inputEditTitle">Title</label>
+               <input id="inputEditTitle" type="text" required />
+            </div>
+            <div class="input">
+               <label for="inputEditAuthor">Writer</label>
+               <input id="inputEditAuthor" type="text" required />
+            </div>
+            <div class="input">
+               <label for="inputEditYear">Publication Year</label>
+               <input id="inputEditYear" type="number" value="2022" required />
+            </div>
+            <button id="bookEditCancel">Cancel</button>
+            <button id="bookEditSubmit" type="submit" class="btn-blue">Save</button>
+         </form>
+      </section>
+   </div>
+   </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="dist/js/script.js" defer="defer"></script>
+</body>
+</html>

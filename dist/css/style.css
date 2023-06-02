@@ -1,0 +1,580 @@
+@font-face {
+    font-family: "Avenue";
+    src: url('../../font/MADEAvenuePERSONALUSE-Regular.otf');
+}
+@font-face {
+    font-family: "Poppins";
+    src: url('https://fonts.googleapis.com/css2?family=Play');
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Avenue';
+}
+
+body {
+    margin: auto;
+    background-color: #ffffff;
+}
+#banner {
+    position: absolute;
+    top: 300px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #804a284b;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    padding: 40px;
+
+    z-index: 9;
+    font-weight: bold;
+  
+}
+
+
+ nav a:hover{
+    color:#ce733b;
+ }
+
+a, a:hover, a:active, a:focus, a:visited{
+    color:#000000;
+    text-decoration:none;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#mainbanner {
+    background-image: url('../../img/bg%20book.png');
+    background-size: cover;
+    width: 100%;
+    height: 930px;
+}
+
+#banner p{
+    /* margin-top: 330px; */
+    font-family: 'Avenue';
+    font-size: 23px;
+    color: #C66A2F;
+    margin-left: 90px;
+    
+}
+
+#banner h1{
+    font-size: 80px;
+    margin-left: 90px;
+    margin-top: 5px;
+    margin-bottom: 81px;
+}
+
+.button a {
+    font-family: sans-serif;
+    font-size: 15px;
+    background: #445F85;
+    color: white;
+    border: rgb(0, 0, 0) 3px solid;
+    border-radius: 20px;
+    padding: 10px 70px;
+    margin-top: 10px;
+    margin-left: 90px;
+    
+}
+.button a {
+    text-decoration: none;
+}
+.button a:hover{
+    opacity:0.9;
+}
+#aboutbook .image{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    width: 30%;
+    background-image: url('../../img/Rectangle\ blue.png');
+}
+.desc  h1{
+    position: absolute;
+    font-family: 'Evanue';
+    margin-top: 230px;
+    margin-left: 650px;
+    font-size: 60px;
+}
+.desc p{
+    position: absolute;
+    font-family: 'Poppins';
+    margin-top: 350px;
+    margin-left: 700px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.kacchan img{
+    width: 100%;
+    height: auto;
+    margin-left: 50px;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px;
+    position: relative;
+    background-color: antiquewhite;
+    
+ }
+ 
+ input {
+    margin-top: 5px;
+    border: none;
+    outline: 1px solid gray;
+    transition: ease-in 0.1s;
+    
+ }
+ input:focus {
+    outline: 2px solid var(--green);
+ }
+ .input_book {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+ }
+ 
+ .input_book > h2 {
+    text-align: center;
+    color: var(--darkblue);
+ }
+ 
+ .input_book > form > .input {
+    margin: 8px 0;
+ }
+ 
+ .input_book > form > button {
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: 600;
+ }
+ 
+ .input_book > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 600;
+ }
+ 
+ .input_book > form > .input > label {
+    color: var(--darkblue);
+    font-weight: 700;
+ }
+ 
+ .input_book > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .input_book > form > .input_inline > label {
+    color: var(--darkblue);
+    font-weight: bold;
+    margin-right: 10px;
+ }
+ .input_book > form > .input_inline > #inputBookIsComplete {
+    outline-style: none;
+ }
+ 
+ .input_edit_section {
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 0;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.425);
+    backdrop-filter: blur(5px);
+ }
+ 
+ .input_edit_section > form {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgb(192, 192, 192);
+ }
+ 
+ .ssearch_book {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+ }
+ 
+ .search_book > h2 {
+    color: var(--darkblue);
+ }
+ 
+ .search_book > form {
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .search_book > form > label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+ }
+ 
+ .search_book > form > input {
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 10px;
+ }
+ 
+ .search_book > form > button {
+    color: white;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    width: 20%;
+ }
+ 
+ .book_shelf_container {
+    padding: 30px 20px;
+    margin: 16px 0 0 0;
+
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+ }
+ #reset{
+    border: 0;
+    padding: 7px;
+    border-radius: 5px;
+    font-family: 'Evanue';
+ }
+ 
+ #resetRak {
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: 600;
+ }
+ 
+ .book_shelf {
+    padding: 10px;
+ }
+ 
+ .book_shelf.book_read {
+    border-bottom: 5px double var(--darkblue);
+    margin-bottom: 16px;
+ }
+ 
+ .book_shelf > h2 {
+    color: var(--darkblue);
+ }
+ 
+ .book_shelf > .book_list {
+    padding: 16px;
+ }
+ 
+ .book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+ }
+ 
+ .book_shelf > .book_list > .book_item > h3,
+ p {
+    margin: 8px 0;
+    text-transform: capitalize;
+ }
+ 
+ .book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 10px 20px;
+    margin:  5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+ }
+ 
+ .btn-blue {
+    background-color: #445F85;
+    color: white;
+ }
+ 
+ .btn-red {
+    background-color: rgb(220 38 38);
+    color: white;
+ }
+ .btn-orange {
+    background-color: rgb(251 191 36);
+    color: white;
+ }
+
+ #bookEditCancel {
+    margin-bottom: 5px;
+    background-color: rgb(220 38 38);
+ }
+@media only screen and (max-width: 1300px) {
+    #banner {
+        position: absolute;
+        top: -10px;
+    }
+    a, a:hover, a:active, a:focus, a:visited{
+        color:#000000;
+        text-decoration:none;
+        font-size: 19px;
+        margin: 10px;
+    }
+    #mainbanner{
+        height: 800px;
+    }
+    #banner p{
+        margin-top: 330px;
+        font-family: 'Avenue';
+        font-size: 20px;
+        color: #C66A2F;
+        margin-left: 80px;
+        
+    }
+    #banner h1{
+        font-size: 70px;
+        margin-left: 80px;
+        margin-top: 5px;
+    }
+    .button a{
+        margin-left: 80px;
+        font-size: 14px;
+        padding: 10px 65px;
+        border-radius: 20px;
+        color: white;
+    }
+    #aboutbook .image{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .desc  h1{
+        position: absolute;
+        font-family: 'Evanue';
+        margin-top: 200px;
+        margin-left: 550px;
+        font-size: 50px;
+    }
+    .desc p{
+        position: absolute;
+        font-family: 'Poppins';
+        margin-top: 320px;
+        margin-left: 590px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+   
+}
+@media only screen and (max-width: 1200px){
+    .desc  h1{
+        margin-top: 150px;
+        margin-left: 530px;
+        font-size: 45px;
+    }
+    .desc p{
+        margin-top: 270px;
+        margin-left: 550px;
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 900px){
+    a, a:hover, a:active, a:focus, a:visited{
+        color:#000000;
+        text-decoration:none;
+        font-size: 17px;
+        margin: 10px;
+    }
+    #mainbanner{
+        height: 700px;
+    }
+    #banner p{
+        margin-top: 200px;
+        font-family: 'Avenue';
+        font-size: 17px;
+        color: #C66A2F;
+        margin-left: 70px;
+        
+    }
+    #banner h1{
+        font-size: 50px;
+        margin-left: 70px;
+        margin-top: 5px;
+        margin-bottom: 70px;
+    }
+    .button a{
+        margin-left: 70px;
+        font-size: 14px;
+        padding: 8px 55px;
+        border-radius: 20px;
+        color: white;
+    }
+    .desc  h1{
+        margin-top: 150px;
+        margin-left: 413px;
+        font-size: 29px;
+    }
+    .desc p{
+        margin-top: 200px;
+        margin-left: 400px;
+        font-size: 19px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .desc  h1{
+        margin-top: 130px;
+        margin-left: 352px;
+        font-size: 25px;
+    }
+    .desc p{
+        margin-top: 190px;
+        margin-left: 340px;
+        font-size: 17px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    a, a:hover, a:active, a:focus, a:visited{
+        color:#000000;
+        text-decoration:none;
+        font-size: 15px;
+        margin: 10px;
+    }
+    #mainbanner{
+        height: 400px;
+    }
+    #banner p{
+        margin-top: 150px;
+        font-family: 'Avenue';
+        font-size: 14px;
+        color: #C66A2F;
+        margin-left: 40px;
+        
+    }
+    #banner h1{
+        font-size: 35px;
+        margin-left: 40px;
+        margin-top: 5px;
+        margin-bottom: 50px;
+    }
+    .button a{
+        margin-left: 40px;
+        font-size: 12px;
+        padding: 5px 30px;
+        border-radius: 20px;
+        color: white;
+    }
+    .desc  h1{
+        margin-top: 100px;
+        margin-left: 320px;
+        font-size: 25px;
+    }
+    .desc p{
+        margin-top: 150px;
+        margin-left: 300px;
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .desc  h1{
+        margin-top: 100px;
+        margin-left: 290px;
+        font-size: 23px;
+    }
+    .desc p{
+        margin-top: 150px;
+        margin-left: 280px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    a, a:hover, a:active, a:focus, a:visited{
+        color:#000000;
+        text-decoration:none;
+        font-size: 13px;
+        margin: 10px;
+    }
+    #mainbanner{
+        height: 370px;
+    }
+    #banner p{
+        margin-top: 150px;
+        font-family: 'Avenue';
+        font-size: 10px;
+        color: #C66A2F;
+        margin-left: 25px;
+        
+    }
+    #banner h1{
+        font-size: 25px;
+        margin-left: 25px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+    .button a{
+        margin-left: 25px;
+        font-size: 10px;
+        padding: 3px 20px;
+        border-radius: 20px;
+        color: white;
+    }
+    .desc  h1{
+        margin-top: 100px;
+        margin-left: 240px;
+        font-size: 23px;
+    }
+    .desc p{
+        margin-top: 150px;
+        margin-left: 230px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+   
